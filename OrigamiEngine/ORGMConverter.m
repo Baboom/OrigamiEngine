@@ -74,7 +74,7 @@
 
     OSStatus stat = AudioConverterNew(&_inputFormat, &_outputFormat, &_converter);
     if (stat != noErr) {
-        NSLog(NSLocalizedString(@"Error creating converter", nil));
+//        NSLog(NSLocalizedString(@"Error creating converter", nil));
         return NO;
     }
 
@@ -86,7 +86,7 @@
                                          sizeof(channelMap),
                                          channelMap);
         if (stat != noErr) {
-            NSLog(NSLocalizedString(@"Error mapping channels", nil));
+//            NSLog(NSLocalizedString(@"Error mapping channels", nil));
             return NO;
         }
     }
